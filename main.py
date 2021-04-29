@@ -73,7 +73,7 @@ class fa:
             print(self.find_best(X))
             plt.plot(np.arange(0,self.t,1),score)
             plt.xlabel('Iterations')
-            plt.ylabel('Score of population')
+            plt.ylabel('Best solution:')
             plt.savefig('plot.png')
             plt.show()
         return self.find_best(X)
